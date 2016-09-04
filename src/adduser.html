@@ -1,0 +1,60 @@
+ <head>
+ <style>
+ .margin-bottom {
+    :15px;
+}
+
+</style>
+ </head>
+
+ <div class="container">
+  <h4 class="well">Add Users </h4>
+
+
+   <form>
+
+
+     <div class="form-group">
+       <label  for="name">Name</label>
+       <div >
+            <input type="text" class="form-control"  name ="name"  [(ngModel)]="userModel.name"/>
+       </div>
+     </div>
+
+      <div class="form-group ">
+	        <label  for="age">Age</label>
+	        <div >
+	            <input type="text" name ="age"  class="form-control" [(ngModel)]="userModel.age"/>
+	        </div>
+     </div>
+
+
+      <div class="form-group">
+	        <label  for="address">Address</label>
+	        <div>
+	            <input type="text"  class="form-control" name ="address"  [(ngModel)]="userModel.address"/>
+	        </div>
+       </div>
+
+
+       <div class="form-group">
+	        <label  for="phone">Phone</label>
+	        <div >
+	           <input type="text" class="form-control"  name ="phone"  [(ngModel)]="userModel.phone"/>
+	        </div>
+     </div>
+	 
+	 
+	 
+       <div class="form-group">
+	        
+	        <div >
+	           <button (click)="save()">Submit</button>
+			   
+
+	        </div>
+     </div>
+
+   </form>
+
+</div>

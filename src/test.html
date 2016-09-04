@@ -1,0 +1,22 @@
+<h1>User Management </h1>
+
+
+
+<button (click)="saveUser()">Save User</button>
+
+<button (click)="viewUser()">View Users</button>
+
+<button (click)="editUser()">Edit Users</button>
+
+<div *ngIf="view=='view'">
+<view-user> view </view-user>
+</div>
+
+<div *ngIf="view == 'save'">
+<add-user> add </add-user>
+</div>
+
+
+<div *ngIf="view == 'edit'">
+<edit-user> Edit </edit-user>
+</div>

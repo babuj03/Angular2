@@ -1,0 +1,25 @@
+
+
+<div class="container">
+<h4 class="well">Edit Users </h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+		<th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="#user of users">
+        <td>{{ user.name | uppercase}}</td>
+        <td >{{ user.age }}</td>
+        <td contenteditable='true'>{{ user.address }}</td>
+		<td contenteditable='true'>{{ user.phone }}</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
