@@ -1,7 +1,7 @@
-
+<h1>Edit Users </h1>
 
 <div class="container">
-<h4 class="well">Edit Users </h4>
+
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -9,20 +9,17 @@
         <th>Age</th>
         <th>Address</th>
 		<th>Phone</th>
-		<th>Save</th>
       </tr>
     </thead>
     <tbody>
       <tr  *ngFor="#user of users">
-        <td>{{ user.name | uppercase}}</td>
+
+
+        <td>{{ user.name }}</td>
         <td >{{ user.age }}</td>
         <td contenteditable='true'>{{ user.address }}</td>
 		<td contenteditable='true'>{{ user.phone }}</td>
-		<td> <a href="#" class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-ok"></span> Save
-        </a> </td>
       </tr>
-
 
     </tbody>
   </table>

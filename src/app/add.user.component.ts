@@ -10,7 +10,7 @@ import {User} from './user'
 })
 
 export class AddUserComponent {
- userModel = new User('',0,'','');     
+ userModel = new User();     
     constructor(private _httpService:HTTPTestService){        
     }
     
@@ -18,4 +18,8 @@ export class AddUserComponent {
       alert(JSON.stringify(this.userModel));	
 			
     }
+	
+   addUser()  {
+	userModel.setUsers(this.userModel.getMockUserList().concat(this.userModel));
+   }   
 }

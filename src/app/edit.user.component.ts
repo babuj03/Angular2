@@ -11,15 +11,12 @@ import {User} from './user'
 })
 
 export class EditUserComponent {
- public users = [
-    { name: 'Ganesh', age: 21, address: 'world', phone:'99999999' },
-    { name: 'Krish', age: 21, address: 'world', phone:'99999999' },
-    { name: 'Sarvana', age: 21, address: 'world', phone:'99999999' }
-  ];
-      
-     
+	  
+    users = new Array<User>(); 
+	    
     constructor(private _httpService:HTTPTestService){        
-    }
+	this.users =   new User().getUsers();
+     }
     
 	
     getServerTime(){ 

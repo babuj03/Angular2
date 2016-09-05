@@ -22,8 +22,7 @@
     <tbody>
 
 
-      <tr  *ngFor="#user of users |  myfilter:txtFilter | ageFilter :agFilter">
-      <tr  *ngFor="#user of users |  myfilter:txtFilter | ageFilter :agFilter">
+      <tr  *ngFor="#user of users |  myfilter:txtFilter | ageFilter :agFilter">      
         <td>{{ user.name }}</td>
         <td>{{ user.age }}</td>
         <td>{{ user.address }}</td>
